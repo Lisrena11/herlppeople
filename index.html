@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Órdenes de Trabajo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/favicon-32x32.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Órdenes</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Gestión de Órdenes de Trabajo</h1>
+    <div id="form-container">
+        <h2>Añadir Nueva Orden de Trabajo</h2>
+        <form id="order-form">
+            <label for="task">Tarea:</label>
+            <input type="text" id="task" name="task" required>
+            <label for="assignee">Asignado a:</label>
+            <input type="text" id="assignee" name="assignee" required>
+            <label for="status">Estado:</label>
+            <select id="status" name="status">
+                <option value="pendiente">Pendiente</option>
+                <option value="en progreso">En Progreso</option>
+                <option value="completada">Completada</option>
+            </select>
+            <button type="submit">Añadir Orden</button>
+        </form>
+    </div>
+    <div id="orders-container">
+        <h2>Órdenes de Trabajo</h2>
+        <table id="orders-table">
+            <thead>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Asignado a</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las órdenes de trabajo se añadirán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

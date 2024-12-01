@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f7fa; /* Fondo azul claro */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00796b; /* Fondo verde oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.logo img {
+    height: 50px; /* Ajusta según el tamaño de tu logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b; /* Verde oscuro */
+}
+
+#form-container, #orders-container {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00796b; /* Verde oscuro */
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #00796b; /* Borde verde oscuro */
+    border-radius: 4px;
+}
+
+button {
+    background-color: #00796b; /* Fondo verde oscuro */
+    color: #ffffff; /* Texto blanco */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40; /* Fondo verde más oscuro al pasar el cursor */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #00796b; /* Fondo verde oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e0f7fa; /* Fondo azul claro para filas impares */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Fondo blanco para filas pares */
+}
